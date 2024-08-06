@@ -8,14 +8,12 @@ class HeaderView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool isMobile = Responsive.isMobile(context);
     bool isDesktop = Responsive.isDesktop(context);
     return LayoutBuilder(builder: (context, constraints) {
       return Stack(
         children: [
           Image.asset(
             'assets/hero.png',
-            //todo: scale the photo and adjust desktop view
             width: !isDesktop
                 ? MediaQuery.sizeOf(context).width
                 : MediaQuery.sizeOf(context).width * 2 / 3,

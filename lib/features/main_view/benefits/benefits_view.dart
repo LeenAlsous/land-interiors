@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:land_interiors/features/main_view/benefits/widgets/custom_icon.dart';
-import 'package:land_interiors/helper/responsive.dart';
 
 class BenefitsView extends StatelessWidget {
   const BenefitsView({Key? key}) : super(key: key);

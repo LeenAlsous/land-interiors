@@ -13,7 +13,7 @@ class CustomIcon extends StatelessWidget {
         SvgPicture.asset(image,
             width: MediaQuery.sizeOf(context).height * 0.05,
             height: MediaQuery.sizeOf(context).height * 0.05),
-        SizedBox(height: 15),
+        const SizedBox(height: 15),
         Text(
           subtitle,
           textAlign: TextAlign.center,
