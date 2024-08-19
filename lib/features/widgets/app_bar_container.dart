@@ -43,21 +43,25 @@ class ContainerAppBar extends StatelessWidget {
               ],
             ),
           ),
-          if(isDesktop)Center(
-            child: SizedBox(
-              width: MediaQuery.sizeOf(context).width / 3,
-              child: const Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Text('About'),
-                  Text('Projects'),
-                  Text('Studio'),
-                  Text('Blog'),
-                  Text('Contact')
-                ],
+          if (isDesktop)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 25.0),
+              child: Center(
+                child: SizedBox(
+                  width: MediaQuery.sizeOf(context).width / 3,
+                  child: const Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Text('About'),
+                      Text('Projects'),
+                      Text('Studio'),
+                      Text('Blog'),
+                      Text('Contact')
+                    ],
+                  ),
+                ),
               ),
-            ),
-          )
+            )
         ],
       ),
     );
